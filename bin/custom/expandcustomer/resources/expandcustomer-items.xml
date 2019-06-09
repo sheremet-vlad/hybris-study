@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2018 SAP SE or an SAP affiliate company. All rights reserved.
+
+ This software is the confidential and proprietary information of SAP
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with SAP.
+-->
+<!--
+	ATTENTION: This is just an example file. You have to edit it according to your needs.
+-->
+
+<items 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:noNamespaceSchemaLocation="items.xsd">
+	<collectiontypes>
+		<collectiontype code="SportList" elementtype="Sport" type="set"/>
+	</collectiontypes>
+
+	<enumtypes>
+		<enumtype code="SportTypeEnum" autocreate="true">
+			<value code="football"/>
+			<value code="volleyball"/>
+			<value code="basketball"/>
+		</enumtype>
+	</enumtypes>
+
+	<relations>
+			<relation code="SportToProduct" autocreate="true" localized="false">
+                <sourceElement type="Sport" cardinality="one" qualifier="sport">
+                    <modifiers read="true" write="true" search="true" optional="true"/>
+                </sourceElement>
+                <targetElement type="Product" cardinality="many" collectiontype="list" qualifier="product">
+                    <modifiers read="true" write="true" search="true" optional="false"/>
+                </targetElement>
+			</relation>
+	</relations>
+
+	<itemtypes>
+		<itemtype generate="false" code="Customer" autocreate="false">
+			<attributes>
+				<attribute qualifier="customerSport" type="SportList">
+					<persistence type="property"/>
+				</attribute>
+			</attributes>
+		</itemtype>
+
+		<itemtype generate="true" code="Sport" autocreate="true">
+			<deployment table="Sport" typecode="30266"/>
+			<attributes>
+				<!--<attribute qualifier="customer" type="Customer" redeclare="true" generate="true" autocreate="true">
+					<modifiers read="true" write="false" search="true" removable="true" optional="false" initial="true" unique="true"/>
+				</attribute>-->
+				<attribute qualifier="code" type="java.lang.String">
+					<persistence type="property"/>
+					<modifiers read="true" write="true" search="true" initial="true" optional="false" unique="true"/>
+				</attribute>
+				<attribute qualifier="sportType" type="SportTypeEnum">
+					<persistence type="property"/>
+				</attribute>
+			</attributes>
+		</itemtype>
+	</itemtypes>
+</items>

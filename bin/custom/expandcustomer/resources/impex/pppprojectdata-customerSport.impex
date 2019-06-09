@@ -1,0 +1,8 @@
+$catalogVersion=
+insert_update Product;code[unique=true];catalogVersion;name;description
+;P101;$catalogVersion;football ball;ball for football
+;P102;$catalogVersion;volleyball ball;ball for volleyball
+;P103;$catalogVersion;football shorts;shorts for football
+;P104;$catalogVersion;volleyball shorts;shorts for volleyball
+
+insert_update Sport;
