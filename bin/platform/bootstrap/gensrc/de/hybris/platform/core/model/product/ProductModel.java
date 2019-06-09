@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 09.06.2019 18:40:51                         ---
+ * --- Generated at 10.06.2019 1:01:02                          ---
  * ----------------------------------------------------------------
  *  
  * [y] hybris Platform
@@ -13,6 +13,7 @@
  */
 package de.hybris.platform.core.model.product;
 
+import concerttours.model.BandModel;
 import de.hybris.bootstrap.annotations.Accessor;
 import de.hybris.platform.catalog.enums.ArticleApprovalStatus;
 import de.hybris.platform.catalog.enums.ArticleStatus;
@@ -234,6 +235,12 @@ public class ProductModel extends ItemModel
 	/** <i>Generated constant</i> - Attribute key of <code>Product.sport</code> attribute defined at extension <code>expandcustomer</code>. */
 	public static final String SPORT = "sport";
 	
+	/** <i>Generated constant</i> - Attribute key of <code>Product.hashtag</code> attribute defined at extension <code>concerttours</code>. */
+	public static final String HASHTAG = "hashtag";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>Product.band</code> attribute defined at extension <code>concerttours</code>. */
+	public static final String BAND = "band";
+	
 	
 	/**
 	 * <i>Generated constructor</i> - Default constructor for generic creation.
@@ -312,6 +319,16 @@ public class ProductModel extends ItemModel
 	public Map<ArticleStatus,String> getArticleStatus(final Locale loc)
 	{
 		return getPersistenceContext().getLocalizedValue(ARTICLESTATUS, loc);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Product.band</code> attribute defined at extension <code>concerttours</code>. 
+	 * @return the band
+	 */
+	@Accessor(qualifier = "band", type = Accessor.Type.GETTER)
+	public BandModel getBand()
+	{
+		return getPersistenceContext().getPropertyValue(BAND);
 	}
 	
 	/**
@@ -530,6 +547,16 @@ public class ProductModel extends ItemModel
 	public List<ProductFeatureModel> getFeatures()
 	{
 		return getPersistenceContext().getPropertyValue(FEATURES);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Product.hashtag</code> attribute defined at extension <code>concerttours</code>. 
+	 * @return the hashtag - hashtag of concert tour for social media
+	 */
+	@Accessor(qualifier = "hashtag", type = Accessor.Type.GETTER)
+	public String getHashtag()
+	{
+		return getPersistenceContext().getPropertyValue(HASHTAG);
 	}
 	
 	/**
@@ -983,6 +1010,17 @@ public class ProductModel extends ItemModel
 	}
 	
 	/**
+	 * <i>Generated method</i> - Setter of <code>Product.band</code> attribute defined at extension <code>concerttours</code>. 
+	 *  
+	 * @param value the band
+	 */
+	@Accessor(qualifier = "band", type = Accessor.Type.SETTER)
+	public void setBand(final BandModel value)
+	{
+		getPersistenceContext().setPropertyValue(BAND, value);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Setter of <code>Product.buyerIDS</code> attribute defined at extension <code>catalog</code>. 
 	 *  
 	 * @param value the buyerIDS
@@ -1201,6 +1239,17 @@ public class ProductModel extends ItemModel
 	public void setFeatures(final List<ProductFeatureModel> value)
 	{
 		getPersistenceContext().setPropertyValue(FEATURES, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>Product.hashtag</code> attribute defined at extension <code>concerttours</code>. 
+	 *  
+	 * @param value the hashtag - hashtag of concert tour for social media
+	 */
+	@Accessor(qualifier = "hashtag", type = Accessor.Type.SETTER)
+	public void setHashtag(final String value)
+	{
+		getPersistenceContext().setPropertyValue(HASHTAG, value);
 	}
 	
 	/**
