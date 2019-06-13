@@ -1,6 +1,6 @@
 #Ant properties
-#Mon Jun 10 01:35:21 MSK 2019
-build.builddate=20190610 0134
+#Fri Jun 14 01:52:14 MSK 2019
+build.builddate=20190614 0152
 build.releasedate=20190116 1153
 build.vendor=hybris
 build.version=1811.1
