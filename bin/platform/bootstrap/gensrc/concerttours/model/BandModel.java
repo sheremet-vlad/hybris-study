@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 14.06.2019 13:35:20                         ---
+ * --- Generated at 16.06.2019 18:41:57                         ---
  * ----------------------------------------------------------------
  */
 package concerttours.model;
@@ -37,6 +37,9 @@ public class BandModel extends ItemModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>Band.albumSales</code> attribute defined at extension <code>concerttours</code>. */
 	public static final String ALBUMSALES = "albumSales";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>Band.daysUntil</code> attribute defined at extension <code>concerttours</code>. */
+	public static final String DAYSUNTIL = "daysUntil";
 	
 	/** <i>Generated constant</i> - Attribute key of <code>Band.tours</code> attribute defined at extension <code>concerttours</code>. */
 	public static final String TOURS = "tours";
@@ -93,6 +96,16 @@ public class BandModel extends ItemModel
 	public String getCode()
 	{
 		return getPersistenceContext().getPropertyValue(CODE);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Band.daysUntil</code> attribute defined at extension <code>concerttours</code>. 
+	 * @return the daysUntil
+	 */
+	@Accessor(qualifier = "daysUntil", type = Accessor.Type.GETTER)
+	public Long getDaysUntil()
+	{
+		return getPersistenceContext().getPropertyValue(DAYSUNTIL);
 	}
 	
 	/**
