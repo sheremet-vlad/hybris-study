@@ -61,6 +61,10 @@
 					<description>type of concert (indoors or open air)</description>
 					<persistence type="property" />
 				</attribute>
+				<attribute qualifier="daysUntil" type="java.lang.Long">
+					<persistence type="dynamic" attributeHandler="concertDaysUntilAttributeHandler" />
+					<modifiers read="true" write="false"/>
+				</attribute>
 			</attributes>
 		</itemtype>
 		<!-- Hybris123SnippetEnd -->
@@ -95,10 +99,6 @@
 				<attribute qualifier="albumSales" type="java.lang.Long">
 					<description>official global album sales</description>
 					<persistence type="property" />
-				</attribute>
-				<attribute qualifier="daysUntil" type="java.lang.Long">
-					<persistence type="property" attributeHandler="concertDaysUntilAttributeHandler" />
-					<modifiers read="true" write="false"/>
 				</attribute>
 			</attributes>
 		</itemtype>

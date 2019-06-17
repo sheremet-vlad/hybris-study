@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 16.06.2019 18:41:57                         ---
+ * --- Generated at 17.06.2019 23:11:36                         ---
  * ----------------------------------------------------------------
  */
 package concerttours.jalo;
@@ -42,8 +42,6 @@ public class Band extends GenericItem
 	public static final String HISTORY = "history";
 	/** Qualifier of the <code>Band.albumSales</code> attribute **/
 	public static final String ALBUMSALES = "albumSales";
-	/** Qualifier of the <code>Band.daysUntil</code> attribute **/
-	public static final String DAYSUNTIL = "daysUntil";
 	/** Qualifier of the <code>Band.tours</code> attribute **/
 	public static final String TOURS = "tours";
 	/** Qualifier of the <code>Band.types</code> attribute **/
@@ -73,7 +71,6 @@ public class Band extends GenericItem
 		tmp.put(NAME, AttributeMode.INITIAL);
 		tmp.put(HISTORY, AttributeMode.INITIAL);
 		tmp.put(ALBUMSALES, AttributeMode.INITIAL);
-		tmp.put(DAYSUNTIL, AttributeMode.INITIAL);
 		DEFAULT_INITIAL_ATTRIBUTES = Collections.unmodifiableMap(tmp);
 	}
 	@Override
@@ -189,43 +186,6 @@ public class Band extends GenericItem
 	public void setCode(final String value)
 	{
 		setCode( getSession().getSessionContext(), value );
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>Band.daysUntil</code> attribute.
-	 * @return the daysUntil
-	 */
-	public Long getDaysUntil(final SessionContext ctx)
-	{
-		return (Long)getProperty( ctx, "daysUntil".intern());
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>Band.daysUntil</code> attribute.
-	 * @return the daysUntil
-	 */
-	public Long getDaysUntil()
-	{
-		return getDaysUntil( getSession().getSessionContext() );
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>Band.daysUntil</code> attribute. 
-	 * @return the daysUntil
-	 */
-	public long getDaysUntilAsPrimitive(final SessionContext ctx)
-	{
-		Long value = getDaysUntil( ctx );
-		return value != null ? value.longValue() : 0;
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>Band.daysUntil</code> attribute. 
-	 * @return the daysUntil
-	 */
-	public long getDaysUntilAsPrimitive()
-	{
-		return getDaysUntilAsPrimitive( getSession().getSessionContext() );
 	}
 	
 	/**
