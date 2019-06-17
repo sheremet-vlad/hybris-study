@@ -1,4 +1,0 @@
-$catalogVersion=8796096954450
-
-insert_update Product;code[unique=true];catalogVersion;name;description
-;P101;$catalogVersion;football ball;ball for football

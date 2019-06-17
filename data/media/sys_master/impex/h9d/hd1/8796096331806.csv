@@ -1,3 +1,0 @@
-
-insert_update Customer;customerID[unique=true];customerSport(code)
-,,,,target type Customer is not permitted by current header - type Customer requires missing column [uid],, target type Customer is not permitted by current header - type Customer requires missing column [uid], ;C101;S101

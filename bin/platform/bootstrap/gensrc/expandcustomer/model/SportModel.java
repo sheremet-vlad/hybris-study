@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 17.06.2019 23:11:36                         ---
+ * --- Generated at 18.06.2019 0:31:35                          ---
  * ----------------------------------------------------------------
  */
 package expandcustomer.model;

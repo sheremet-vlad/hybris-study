@@ -1,3 +1,0 @@
-
-insert_update Product;code[unique=true];catalogVersion;name;description
-,,,,cannot import item pk '8796096954450' since it is no instance of attribute type CatalogVersion;P101;8796096954450;football ball;ball for football
