@@ -24,7 +24,7 @@
               		username="sa"
              		password=""
               		driverClassName="org.hsqldb.jdbcDriver"
-			url="jdbc:hsqldb:file:E:\hybris\hybris\data/hsqldb/mydb;shutdown=true;hsqldb.tx=MVCC"
+			url="jdbc:hsqldb:file:/home/admin1/sheremet/hybris/hybris/data/hsqldb/mydb;shutdown=true;hsqldb.tx=MVCC"
 			useStatementFacade="false"/>
         -->
 
@@ -33,8 +33,8 @@
 		<!-- <Resource 	name="mail/Session" auth="Container"
 		        		type="javax.mail.Session"
 		        		mail.transport.protocol="smtp"
-		        		mail.smtp.host="${mail.smtp.server}"
-		        		mail.smtp.from="test@hybris.de"
+		        		mail.smtp.host="smtp.gmail.com"
+		        		mail.smtp.from="concerttours-no-reply@hybris.de"
 		        		description="Global E-Mail Resource"
 		    		/>-->
 
@@ -93,7 +93,7 @@
     <Engine name="Catalina" defaultHost="localhost" startStopThreads="0">
 
 			<Valve 	className="org.apache.catalina.valves.AccessLogValve"
-             		directory="E:\hybris\hybris\log/tomcat"
+             		directory="/home/admin1/sheremet/hybris/hybris/log/tomcat"
 	      		 	prefix="access."
         	   		suffix=".log"
 	      		 	pattern="combined"
@@ -109,91 +109,109 @@
 		               showReport="false" 
 		               showServerInfo="false"/>
 
-			<!-- 'testweb' extension's context for tenant 'junit' -->
-			<Context path="/test" docBase="E:\hybris\hybris\bin\platform\ext\testweb/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" />
-				</JarScanner>
-			</Context>
-
 			<!-- 'mediaweb' extension's context for tenant 'master' -->
-			<Context path="/medias" docBase="E:\hybris\hybris\bin\platform\ext\mediaweb/web/webroot" >
+			<Context path="/medias" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/mediaweb/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" />
 				</JarScanner>
 			</Context>
 
-			<!-- 'maintenanceweb' extension's context for tenant 'master' -->
-			<Context path="/maintenance" docBase="E:\hybris\hybris\bin\platform\ext\maintenanceweb/web/webroot" >
+			<!-- 'testweb' extension's context for tenant 'junit' -->
+			<Context path="/test" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/testweb/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" />
 				</JarScanner>
 			</Context>
 
 			<!-- 'processing' extension's context for tenant 'master' -->
-			<Context path="/processing" docBase="E:\hybris\hybris\bin\platform\ext\processing/web/webroot" >
+			<Context path="/processing" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/processing/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" />
 				</JarScanner>
 			</Context>
 
 			<!-- 'oauth2' extension's context for tenant 'master' -->
-			<Context path="/authorizationserver" docBase="E:\hybris\hybris\bin\platform\ext\oauth2/web/webroot" >
+			<Context path="/authorizationserver" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/oauth2/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" />
 				</JarScanner>
 			</Context>
 
 			<!-- 'oauth2' extension's context for tenant 'junit' -->
-			<Context path="/authorizationserver_junit" docBase="E:\hybris\hybris\bin\platform\ext\oauth2/web/webroot" >
+			<Context path="/authorizationserver_junit" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/oauth2/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" />
 				</JarScanner>
 			</Context>
 
 			<!-- 'hac' extension's context for tenant 'master' -->
-			<Context path="" docBase="E:\hybris\hybris\bin\platform\ext\hac/web/webroot" >
+			<Context path="" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/hac/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar,*_hac.jar" />
 				</JarScanner>
 			</Context>
 
 			<!-- 'hac' extension's context for tenant 'junit' -->
-			<Context path="/hac_junit" docBase="E:\hybris\hybris\bin\platform\ext\hac/web/webroot" >
+			<Context path="/hac_junit" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/hac/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar,*_hac.jar" />
 				</JarScanner>
 			</Context>
 
-			<!-- 'expandcustomer' extension's context for tenant 'master' -->
-			<Context path="/expandcustomer" docBase="E:\hybris\hybris\bin\custom\expandcustomer/web/webroot" >
+			<!-- 'maintenanceweb' extension's context for tenant 'master' -->
+			<Context path="/maintenance" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/maintenanceweb/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<JarScanner >
+					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" />
+				</JarScanner>
+			</Context>
+
+			<!-- 'backoffice' extension's context for tenant 'master' -->
+			<Context path="/backoffice" docBase="/home/admin1/sheremet/hybris/hybris/bin/ext-backoffice/backoffice/web/webroot" >
+				<Manager pathname="" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<JarScanner >
+					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,webfragment*.jar" />
+				</JarScanner>
+			</Context>
+
+			<!-- 'cleanUp' extension's context for tenant 'master' -->
+			<Context path="/cleanUp" docBase="/home/admin1/sheremet/hybris/hybris/bin/custom/cleanUp/web/webroot" >
+				<Manager pathname="" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<JarScanner >
+					<JarScanFilter defaultTldScan="true" defaultPluggabilityScan="true" />
+				</JarScanner>
+			</Context>
+
+			<!-- 'expandcustomer' extension's context for tenant 'master' -->
+			<Context path="/expandcustomer" docBase="/home/admin1/sheremet/hybris/hybris/bin/custom/expandcustomer/web/webroot" >
+				<Manager pathname="" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="true" defaultPluggabilityScan="true" />
 				</JarScanner>
 			</Context>
 
 			<!-- 'concerttours' extension's context for tenant 'master' -->
-			<Context path="/concerttours" docBase="E:\hybris\hybris\bin\custom\concerttours/web/webroot" >
+			<Context path="/concerttours" docBase="/home/admin1/sheremet/hybris/hybris/bin/custom/concerttours/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="true" defaultPluggabilityScan="true" />
 				</JarScanner>

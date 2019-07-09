@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hybris.iml" filepath="$PROJECT_DIR$/.idea/hybris.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../advancedsavedquery.iml" filepath="$PROJECT_DIR$/../advancedsavedquery.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../all_local_extensions.iml" filepath="$PROJECT_DIR$/../all_local_extensions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../auditreportservices.iml" filepath="$PROJECT_DIR$/../auditreportservices.iml" group="Hybris/ext-platform-optional" />
+      <module fileurl="file://$PROJECT_DIR$/../backoffice.iml" filepath="$PROJECT_DIR$/../backoffice.iml" group="Hybris/ext-backoffice" />
+      <module fileurl="file://$PROJECT_DIR$/../catalog.iml" filepath="$PROJECT_DIR$/../catalog.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../cleanUp.iml" filepath="$PROJECT_DIR$/../cleanUp.iml" group="Custom" />
+      <module fileurl="file://$PROJECT_DIR$/../comments.iml" filepath="$PROJECT_DIR$/../comments.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../commons.iml" filepath="$PROJECT_DIR$/../commons.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../concerttours.iml" filepath="$PROJECT_DIR$/../concerttours.iml" group="Custom" />
+      <module fileurl="file://$PROJECT_DIR$/../config.iml" filepath="$PROJECT_DIR$/../config.iml" group="Custom" />
+      <module fileurl="file://$PROJECT_DIR$/../core.iml" filepath="$PROJECT_DIR$/../core.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../deliveryzone.iml" filepath="$PROJECT_DIR$/../deliveryzone.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../europe1.iml" filepath="$PROJECT_DIR$/../europe1.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../expandcustomer.iml" filepath="$PROJECT_DIR$/../expandcustomer.iml" group="Custom" />
+      <module fileurl="file://$PROJECT_DIR$/../hac.iml" filepath="$PROJECT_DIR$/../hac.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../impex.iml" filepath="$PROJECT_DIR$/../impex.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../maintenanceweb.iml" filepath="$PROJECT_DIR$/../maintenanceweb.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../mediaweb.iml" filepath="$PROJECT_DIR$/../mediaweb.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../oauth2.iml" filepath="$PROJECT_DIR$/../oauth2.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../paymentstandard.iml" filepath="$PROJECT_DIR$/../paymentstandard.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../platform.iml" filepath="$PROJECT_DIR$/../platform.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../platformbackoffice.iml" filepath="$PROJECT_DIR$/../platformbackoffice.iml" group="Hybris/ext-platform-backoffice" />
+      <module fileurl="file://$PROJECT_DIR$/../platformservices.iml" filepath="$PROJECT_DIR$/../platformservices.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../processing.iml" filepath="$PROJECT_DIR$/../processing.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../scripting.iml" filepath="$PROJECT_DIR$/../scripting.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../testweb.iml" filepath="$PROJECT_DIR$/../testweb.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../validation.iml" filepath="$PROJECT_DIR$/../validation.iml" group="Platform" />
+      <module fileurl="file://$PROJECT_DIR$/../workflow.iml" filepath="$PROJECT_DIR$/../workflow.iml" group="Platform" />
     </modules>
   </component>
 </project>

@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 18.06.2019 0:31:35                          ---
+ * --- Generated at Jul 8, 2019 3:29:07 PM                      ---
  * ----------------------------------------------------------------
  */
 package concerttours.jalo;
@@ -9,6 +9,8 @@ package concerttours.jalo;
 import concerttours.constants.ConcerttoursConstants;
 import concerttours.jalo.Band;
 import concerttours.jalo.Concert;
+import concerttours.jalo.News;
+import concerttours.jalo.NotLoremIpsumConstraint;
 import de.hybris.platform.directpersistence.annotation.SLDSafe;
 import de.hybris.platform.jalo.GenericItem;
 import de.hybris.platform.jalo.Item;
@@ -276,6 +278,58 @@ public class ConcerttoursManager extends Extension
 	public Concert createConcert(final Map attributeValues)
 	{
 		return createConcert( getSession().getSessionContext(), attributeValues );
+	}
+	
+	public News createNews(final SessionContext ctx, final Map attributeValues)
+	{
+		try
+		{
+			ComposedType type = getTenant().getJaloConnection().getTypeManager().getComposedType("News");
+			return (News)type.newInstance( ctx, attributeValues );
+		}
+		catch( JaloGenericCreationException e)
+		{
+			final Throwable cause = e.getCause();
+			throw (cause instanceof RuntimeException ?
+			(RuntimeException)cause
+			:
+			new JaloSystemException( cause, cause.getMessage(), e.getErrorCode() ) );
+		}
+		catch( JaloBusinessException e )
+		{
+			throw new JaloSystemException( e ,"error creating News : "+e.getMessage(), 0 );
+		}
+	}
+	
+	public News createNews(final Map attributeValues)
+	{
+		return createNews( getSession().getSessionContext(), attributeValues );
+	}
+	
+	public NotLoremIpsumConstraint createNotLoremIpsumConstraint(final SessionContext ctx, final Map attributeValues)
+	{
+		try
+		{
+			ComposedType type = getTenant().getJaloConnection().getTypeManager().getComposedType("NotLoremIpsumConstraint");
+			return (NotLoremIpsumConstraint)type.newInstance( ctx, attributeValues );
+		}
+		catch( JaloGenericCreationException e)
+		{
+			final Throwable cause = e.getCause();
+			throw (cause instanceof RuntimeException ?
+			(RuntimeException)cause
+			:
+			new JaloSystemException( cause, cause.getMessage(), e.getErrorCode() ) );
+		}
+		catch( JaloBusinessException e )
+		{
+			throw new JaloSystemException( e ,"error creating NotLoremIpsumConstraint : "+e.getMessage(), 0 );
+		}
+	}
+	
+	public NotLoremIpsumConstraint createNotLoremIpsumConstraint(final Map attributeValues)
+	{
+		return createNotLoremIpsumConstraint( getSession().getSessionContext(), attributeValues );
 	}
 	
 	public static final ConcerttoursManager getInstance()

@@ -65,5 +65,15 @@
     </bean>
 
 	-->
+	<bean class="expandcustomer.data.CustomerDetailsData">
+		<property name="name" type="java.lang.String"/>
+		<property name="code" type="java.lang.String"/>
+		<property name="sportCount" type="java.lang.Integer"/>
+		<property name="uid" type="java.lang.String"/>
+	</bean>
 
+	<bean class="expandcustomer.data.CustomerShortData">
+		<property name="name" type="java.lang.String"/>
+		<property name="code" type="java.lang.String"/>
+	</bean>
 </beans>

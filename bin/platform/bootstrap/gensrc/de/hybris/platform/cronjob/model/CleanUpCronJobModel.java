@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 18.06.2019 0:31:35                          ---
+ * --- Generated at Jul 8, 2019 3:29:07 PM                      ---
  * ----------------------------------------------------------------
  *  
  * [y] hybris Platform
@@ -43,6 +43,9 @@ public class CleanUpCronJobModel extends CronJobModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>CleanUpCronJob.statuscoll</code> attribute defined at extension <code>processing</code>. */
 	public static final String STATUSCOLL = "statuscoll";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>CleanUpCronJob.dirPath</code> attribute defined at extension <code>cleanUp</code>. */
+	public static final String DIRPATH = "dirPath";
 	
 	
 	/**
@@ -90,6 +93,16 @@ public class CleanUpCronJobModel extends CronJobModel
 	
 	
 	/**
+	 * <i>Generated method</i> - Getter of the <code>CleanUpCronJob.dirPath</code> attribute defined at extension <code>cleanUp</code>. 
+	 * @return the dirPath
+	 */
+	@Accessor(qualifier = "dirPath", type = Accessor.Type.GETTER)
+	public String getDirPath()
+	{
+		return getPersistenceContext().getPropertyValue(DIRPATH);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Getter of the <code>CleanUpCronJob.excludeCronJobs</code> attribute defined at extension <code>processing</code>. 
 	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
 	 * @return the excludeCronJobs - A List of CronJobs which should never be deleted by this clean up job
@@ -130,6 +143,17 @@ public class CleanUpCronJobModel extends CronJobModel
 	public int getXDaysOld()
 	{
 		return toPrimitive((Integer)getPersistenceContext().getPropertyValue(XDAYSOLD));
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>CleanUpCronJob.dirPath</code> attribute defined at extension <code>cleanUp</code>. 
+	 *  
+	 * @param value the dirPath
+	 */
+	@Accessor(qualifier = "dirPath", type = Accessor.Type.SETTER)
+	public void setDirPath(final String value)
+	{
+		getPersistenceContext().setPropertyValue(DIRPATH, value);
 	}
 	
 	/**

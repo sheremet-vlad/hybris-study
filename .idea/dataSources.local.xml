@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="platform" uuid="4bfebc95-6f66-4564-ae2c-b6bcf3f627ce">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="HSQLDB" exact-version="0" />
+      <user-name>sa</user-name>
+    </data-source>
+  </component>
+</project>

@@ -44,15 +44,16 @@
 				<attribute qualifier="customerSport" type="SportList">
 					<persistence type="property"/>
 				</attribute>
+				<attribute qualifier="sportCount" type="java.lang.Integer">
+					<persistence type="dynamic" attributeHandler="sportCountAttributeHandler"/>
+					<modifiers read="true" write="false"/>
+				</attribute>
 			</attributes>
 		</itemtype>
 
 		<itemtype generate="true" code="Sport" autocreate="true">
 			<deployment table="Sport" typecode="30266"/>
 			<attributes>
-				<!--<attribute qualifier="customer" type="Customer" redeclare="true" generate="true" autocreate="true">
-					<modifiers read="true" write="false" search="true" removable="true" optional="false" initial="true" unique="true"/>
-				</attribute>-->
 				<attribute qualifier="code" type="java.lang.String">
 					<persistence type="property"/>
 					<modifiers read="true" write="true" search="true" initial="true" optional="false" unique="true"/>

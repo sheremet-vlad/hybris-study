@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import concerttours.daos.BandDAO;
 import concerttours.model.BandModel;
- 
+
 @Component(value = "bandDAO")
 public class DefaultBandDAO implements BandDAO
 {
@@ -48,6 +48,7 @@ public class DefaultBandDAO implements BandDAO
                         + "WHERE " + "{p:" + BandModel.CODE + "}=?code ";
         final FlexibleSearchQuery query = new FlexibleSearchQuery(queryString);
         query.addQueryParameter("code", code);
+        System.out.println(query);
         return flexibleSearchService.<BandModel> search(query).getResult();
     }
 }

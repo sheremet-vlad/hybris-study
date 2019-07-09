@@ -1,0 +1,7 @@
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];medias(code, catalogversion(catalog(id[default=concertoursProductCatalog]),version[default='Online'])[unique=true,default=concertoursProductCatalog:Online]);catalogversion(catalog(id[default=concertoursProductCatalog]),version[default='Online'])[unique=true,default=concertoursProductCatalog:Online]
+,8796093087794,,,column 2: cannot resolve value 'danceSmall.jpg,danceBig.jpg' for attribute 'medias';<ignore>yBandImage;danceSmall.jpg,danceBig.jpg;<ignore>
+,8796093120562,,,column 2: cannot resolve value 'jazzSmall.jpg,jazzBig.jpg' for attribute 'medias';<ignore>yJazzImage;jazzSmall.jpg,jazzBig.jpg;<ignore>
+,8796093153330,,,column 2: cannot resolve value 'bigbandSmall.jpg,bigbandBig.jpg' for attribute 'medias';<ignore>BannedImage;bigbandSmall.jpg,bigbandBig.jpg;<ignore>
+,8796093186098,,,column 2: cannot resolve value 'omphaSmall.jpg,omphaBig.jpg' for attribute 'medias';<ignore>SirkenImage;omphaSmall.jpg,omphaBig.jpg;<ignore>
+,8796093218866,,,column 2: cannot resolve value 'orchestraSmall.jpg,orchestraBig.jpg' for attribute 'medias';<ignore>TheChoirImage;orchestraSmall.jpg,orchestraBig.jpg;<ignore>

@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 18.06.2019 0:31:35                          ---
+ * --- Generated at Jul 8, 2019 3:29:07 PM                      ---
  * ----------------------------------------------------------------
  */
 package concerttours.model;
@@ -9,9 +9,11 @@ package concerttours.model;
 import concerttours.enums.MusicType;
 import de.hybris.bootstrap.annotations.Accessor;
 import de.hybris.platform.core.model.ItemModel;
+import de.hybris.platform.core.model.media.MediaContainerModel;
 import de.hybris.platform.core.model.product.ProductModel;
 import de.hybris.platform.servicelayer.model.ItemModelContext;
 import java.util.Collection;
+import java.util.Locale;
 import java.util.Set;
 
 /**
@@ -32,11 +34,17 @@ public class BandModel extends ItemModel
 	/** <i>Generated constant</i> - Attribute key of <code>Band.name</code> attribute defined at extension <code>concerttours</code>. */
 	public static final String NAME = "name";
 	
+	/** <i>Generated constant</i> - Attribute key of <code>Band.albumSales</code> attribute defined at extension <code>concerttours</code>. */
+	public static final String ALBUMSALES = "albumSales";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>Band.hashtag</code> attribute defined at extension <code>concerttours</code>. */
+	public static final String HASHTAG = "hashtag";
+	
 	/** <i>Generated constant</i> - Attribute key of <code>Band.history</code> attribute defined at extension <code>concerttours</code>. */
 	public static final String HISTORY = "history";
 	
-	/** <i>Generated constant</i> - Attribute key of <code>Band.albumSales</code> attribute defined at extension <code>concerttours</code>. */
-	public static final String ALBUMSALES = "albumSales";
+	/** <i>Generated constant</i> - Attribute key of <code>Band.image</code> attribute defined at extension <code>concerttours</code>. */
+	public static final String IMAGE = "image";
 	
 	/** <i>Generated constant</i> - Attribute key of <code>Band.tours</code> attribute defined at extension <code>concerttours</code>. */
 	public static final String TOURS = "tours";
@@ -96,13 +104,55 @@ public class BandModel extends ItemModel
 	}
 	
 	/**
+	 * <i>Generated method</i> - Getter of the <code>Band.hashtag</code> attribute defined at extension <code>concerttours</code>. 
+	 * @return the hashtag - hashtag of concert tour for social media
+	 */
+	@Accessor(qualifier = "hashtag", type = Accessor.Type.GETTER)
+	public String getHashtag()
+	{
+		return getHashtag(null);
+	}
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Band.hashtag</code> attribute defined at extension <code>concerttours</code>. 
+	 * @param loc the value localization key 
+	 * @return the hashtag - hashtag of concert tour for social media
+	 * @throws IllegalArgumentException if localization key cannot be mapped to data language
+	 */
+	@Accessor(qualifier = "hashtag", type = Accessor.Type.GETTER)
+	public String getHashtag(final Locale loc)
+	{
+		return getPersistenceContext().getLocalizedValue(HASHTAG, loc);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Getter of the <code>Band.history</code> attribute defined at extension <code>concerttours</code>. 
 	 * @return the history - history of band
 	 */
 	@Accessor(qualifier = "history", type = Accessor.Type.GETTER)
 	public String getHistory()
 	{
-		return getPersistenceContext().getPropertyValue(HISTORY);
+		return getHistory(null);
+	}
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Band.history</code> attribute defined at extension <code>concerttours</code>. 
+	 * @param loc the value localization key 
+	 * @return the history - history of band
+	 * @throws IllegalArgumentException if localization key cannot be mapped to data language
+	 */
+	@Accessor(qualifier = "history", type = Accessor.Type.GETTER)
+	public String getHistory(final Locale loc)
+	{
+		return getPersistenceContext().getLocalizedValue(HISTORY, loc);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Band.image</code> attribute defined at extension <code>concerttours</code>. 
+	 * @return the image - picture of band in different formats
+	 */
+	@Accessor(qualifier = "image", type = Accessor.Type.GETTER)
+	public MediaContainerModel getImage()
+	{
+		return getPersistenceContext().getPropertyValue(IMAGE);
 	}
 	
 	/**
@@ -160,6 +210,29 @@ public class BandModel extends ItemModel
 	}
 	
 	/**
+	 * <i>Generated method</i> - Setter of <code>Band.hashtag</code> attribute defined at extension <code>concerttours</code>. 
+	 *  
+	 * @param value the hashtag - hashtag of concert tour for social media
+	 */
+	@Accessor(qualifier = "hashtag", type = Accessor.Type.SETTER)
+	public void setHashtag(final String value)
+	{
+		setHashtag(value,null);
+	}
+	/**
+	 * <i>Generated method</i> - Setter of <code>Band.hashtag</code> attribute defined at extension <code>concerttours</code>. 
+	 *  
+	 * @param value the hashtag - hashtag of concert tour for social media
+	 * @param loc the value localization key 
+	 * @throws IllegalArgumentException if localization key cannot be mapped to data language
+	 */
+	@Accessor(qualifier = "hashtag", type = Accessor.Type.SETTER)
+	public void setHashtag(final String value, final Locale loc)
+	{
+		getPersistenceContext().setLocalizedValue(HASHTAG, loc, value);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Setter of <code>Band.history</code> attribute defined at extension <code>concerttours</code>. 
 	 *  
 	 * @param value the history - history of band
@@ -167,7 +240,30 @@ public class BandModel extends ItemModel
 	@Accessor(qualifier = "history", type = Accessor.Type.SETTER)
 	public void setHistory(final String value)
 	{
-		getPersistenceContext().setPropertyValue(HISTORY, value);
+		setHistory(value,null);
+	}
+	/**
+	 * <i>Generated method</i> - Setter of <code>Band.history</code> attribute defined at extension <code>concerttours</code>. 
+	 *  
+	 * @param value the history - history of band
+	 * @param loc the value localization key 
+	 * @throws IllegalArgumentException if localization key cannot be mapped to data language
+	 */
+	@Accessor(qualifier = "history", type = Accessor.Type.SETTER)
+	public void setHistory(final String value, final Locale loc)
+	{
+		getPersistenceContext().setLocalizedValue(HISTORY, loc, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>Band.image</code> attribute defined at extension <code>concerttours</code>. 
+	 *  
+	 * @param value the image - picture of band in different formats
+	 */
+	@Accessor(qualifier = "image", type = Accessor.Type.SETTER)
+	public void setImage(final MediaContainerModel value)
+	{
+		getPersistenceContext().setPropertyValue(IMAGE, value);
 	}
 	
 	/**

@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 18.06.2019 0:31:35                          ---
+ * --- Generated at Jul 8, 2019 3:29:07 PM                      ---
  * ----------------------------------------------------------------
  *  
  * [y] hybris Platform
@@ -39,6 +39,9 @@ public class CustomerModel extends UserModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>Customer.customerSport</code> attribute defined at extension <code>expandcustomer</code>. */
 	public static final String CUSTOMERSPORT = "customerSport";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>Customer.sportCount</code> attribute defined at extension <code>expandcustomer</code>. */
+	public static final String SPORTCOUNT = "sportCount";
 	
 	
 	/**
@@ -119,6 +122,16 @@ public class CustomerModel extends UserModel
 	public Collection<CatalogVersionModel> getPreviewCatalogVersions()
 	{
 		return getPersistenceContext().getPropertyValue(PREVIEWCATALOGVERSIONS);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Customer.sportCount</code> dynamic attribute defined at extension <code>expandcustomer</code>. 
+	 * @return the sportCount
+	 */
+	@Accessor(qualifier = "sportCount", type = Accessor.Type.GETTER)
+	public Integer getSportCount()
+	{
+		return getPersistenceContext().getDynamicValue(this,SPORTCOUNT);
 	}
 	
 	/**

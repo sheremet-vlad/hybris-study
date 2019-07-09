@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="platform" uuid="4bfebc95-6f66-4564-ae2c-b6bcf3f627ce">
+      <jdbc-driver>org.hsqldb.jdbcDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:$PROJECT_DIR$/data/hsqldb/mydb;shutdown=true;hsqldb.tx=MVCC</jdbc-url>
+    </data-source>
+  </component>
+</project>

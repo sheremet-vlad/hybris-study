@@ -23,7 +23,7 @@
               		username="sa" 
              		password="" 
               		driverClassName="org.hsqldb.jdbcDriver"
-              		url="jdbc:hsqldb:file:E:\hybris\hybris\data/hsqldb/mydb;shutdown=true;hsqldb.tx=MVCC" 
+              		url="jdbc:hsqldb:file:/home/admin1/sheremet/hybris/hybris/data/hsqldb/mydb;shutdown=true;hsqldb.tx=MVCC" 
 			useStatementFacade="false"/>
         -->
 
@@ -32,8 +32,8 @@
 		<!-- <Resource 	name="mail/Session" auth="Container"
 		        		type="javax.mail.Session"
 		        		mail.transport.protocol="smtp" 
-		        		mail.smtp.host="${mail.smtp.server}"
-		        		mail.smtp.from="test@hybris.de"
+		        		mail.smtp.host="smtp.gmail.com"
+		        		mail.smtp.from="concerttours-no-reply@hybris.de"
 		        		description="Global E-Mail Resource"
 		    		/>-->
     
@@ -90,7 +90,7 @@
     <Engine name="Catalina" defaultHost="localhost" startStopThreads="0">
 	
 			<Valve 	className="org.apache.catalina.valves.AccessLogValve"
-             		directory="E:\hybris\hybris\log/tomcat"
+             		directory="/home/admin1/sheremet/hybris/hybris/log/tomcat"
 	      		 	prefix="access."
         	   		suffix=".log"
 	      		 	pattern="combined"
@@ -110,27 +110,27 @@
 			<!-- Minimal configuration of the back office web applications allowing to administrate system while it is not initialized or not uptodate -->
 					
 			<!-- 'testweb' extension's context for tenant 'junit' -->
-			<Context path="/test" docBase="E:\hybris\hybris\bin\platform\ext\testweb/web/webroot" >
+			<Context path="/test" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/testweb/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" />
 				</JarScanner>
 			</Context>
 
 			<!-- 'hac' extension's context for tenant 'master' -->
-			<Context path="" docBase="E:\hybris\hybris\bin\platform\ext\hac/web/webroot" >
+			<Context path="" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/hac/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar,*_hac.jar" />
 				</JarScanner>
 			</Context>
 
 			<!-- 'hac' extension's context for tenant 'junit' -->
-			<Context path="/hac_junit" docBase="E:\hybris\hybris\bin\platform\ext\hac/web/webroot" >
+			<Context path="/hac_junit" docBase="/home/admin1/sheremet/hybris/hybris/bin/platform/ext/hac/web/webroot" >
 				<Manager pathname="" />
-				<Loader platformHome="E:\hybris\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<Loader platformHome="/home/admin1/sheremet/hybris/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,displaytag*.jar,javax.servlet.jsp.jstl-*.jar,*_hac.jar" />
 				</JarScanner>

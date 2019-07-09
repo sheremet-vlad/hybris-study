@@ -1,0 +1,3 @@
+
+INSERT_UPDATE Band;code[unique=true];types(code)
+,,,,target type Band is not permitted by current header - type Band requires missing column [name], ;A001;rock,eighties

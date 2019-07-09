@@ -1,1 +1,65 @@
 FATAL  | wrapper  | 2019/06/09 13:17:31 | Failed to load configuration: E:\hybris\hybris\bin\platform\tomcat\bin\%HYBRIS_HOME_DIR%\hybris\bin\platform\tomcat\conf\wrapper.conf
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.055 | Unable to write to the configured log directory: E:\hybris\hybris\log/tomcat (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.055 |   The directory does not exist.
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.055 | Unable to write to the configured log file: E:\hybris\hybris\log/tomcat/console-20190624.log (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.055 |   Falling back to the default file in the current working directory: wrapper.log
+STATUS | wrapper  | main    | 2019/06/24 18:01:45.088 | WARNING: Could not write lock file E:\hybris\hybris\data/hybristomcat.lock: No such file or directory
+STATUS | wrapper  | main    | 2019/06/24 18:01:45.088 | --> Wrapper Started as Console
+STATUS | wrapper  | main    | 2019/06/24 18:01:45.088 | Java Service Wrapper Professional Edition 64-bit 3.5.29
+STATUS | wrapper  | main    | 2019/06/24 18:01:45.088 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | main    | 2019/06/24 18:01:45.088 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | main    | 2019/06/24 18:01:45.088 |   Licensed to SAP SE for hybris Platform
+STATUS | wrapper  | main    | 2019/06/24 18:01:45.088 | 
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.291 | The configured wrapper.java.command could not be found, attempting to launch anyway: C:\Program Files\Java\jdk1.8.0_181\jre/bin/java
+STATUS | wrapper  | main    | 2019/06/24 18:01:45.394 | Launching a JVM...
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.396 | Unable to write the Java PID file: E:\hybris\hybris\data/hybristomcat.java.pid
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.396 | Unable to write the Java Id file: E:\hybris\hybris\data/hybristomcat.java.id
+ERROR  | wrapper  | main    | 2019/06/24 18:01:45.397 | JVM exited while loading the application.
+ERROR  | wrapper  | main    | 2019/06/24 18:01:45.398 | Unable to start JVM: No such file or directory (2)
+STATUS | wrapper  | main    | 2019/06/24 18:01:45.799 | Reloading Wrapper configuration...
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.806 | Unable to write to the configured log directory: E:\hybris\hybris\log/tomcat (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.807 |   The directory does not exist.
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.807 | Unable to write to the configured log file: E:\hybris\hybris\log/tomcat/console-20190624.log (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.807 |   Falling back to the default file in the current working directory: wrapper.log
+WARN   | wrapper  | main    | 2019/06/24 18:01:45.811 | The configured wrapper.java.command could not be found, attempting to launch anyway: C:\Program Files\Java\jdk1.8.0_181\jre/bin/java
+STATUS | wrapper  | main    | 2019/06/24 18:01:46.013 | Launching a JVM...
+WARN   | wrapper  | main    | 2019/06/24 18:01:46.014 | Unable to write the Java PID file: E:\hybris\hybris\data/hybristomcat.java.pid
+WARN   | wrapper  | main    | 2019/06/24 18:01:46.014 | Unable to write the Java Id file: E:\hybris\hybris\data/hybristomcat.java.id
+ERROR  | wrapper  | main    | 2019/06/24 18:01:46.015 | JVM exited while loading the application.
+ERROR  | wrapper  | main    | 2019/06/24 18:01:46.016 | Unable to start JVM: No such file or directory (2)
+STATUS | wrapper  | main    | 2019/06/24 18:01:46.418 | Reloading Wrapper configuration...
+WARN   | wrapper  | main    | 2019/06/24 18:01:46.424 | Unable to write to the configured log directory: E:\hybris\hybris\log/tomcat (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:46.425 |   The directory does not exist.
+WARN   | wrapper  | main    | 2019/06/24 18:01:46.425 | Unable to write to the configured log file: E:\hybris\hybris\log/tomcat/console-20190624.log (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:46.425 |   Falling back to the default file in the current working directory: wrapper.log
+WARN   | wrapper  | main    | 2019/06/24 18:01:46.431 | The configured wrapper.java.command could not be found, attempting to launch anyway: C:\Program Files\Java\jdk1.8.0_181\jre/bin/java
+STATUS | wrapper  | main    | 2019/06/24 18:01:46.632 | Launching a JVM...
+WARN   | wrapper  | main    | 2019/06/24 18:01:46.633 | Unable to write the Java PID file: E:\hybris\hybris\data/hybristomcat.java.pid
+WARN   | wrapper  | main    | 2019/06/24 18:01:46.634 | Unable to write the Java Id file: E:\hybris\hybris\data/hybristomcat.java.id
+ERROR  | wrapper  | main    | 2019/06/24 18:01:46.634 | JVM exited while loading the application.
+ERROR  | wrapper  | main    | 2019/06/24 18:01:46.635 | Unable to start JVM: No such file or directory (2)
+STATUS | wrapper  | main    | 2019/06/24 18:01:47.037 | Reloading Wrapper configuration...
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.044 | Unable to write to the configured log directory: E:\hybris\hybris\log/tomcat (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.044 |   The directory does not exist.
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.044 | Unable to write to the configured log file: E:\hybris\hybris\log/tomcat/console-20190624.log (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.044 |   Falling back to the default file in the current working directory: wrapper.log
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.051 | The configured wrapper.java.command could not be found, attempting to launch anyway: C:\Program Files\Java\jdk1.8.0_181\jre/bin/java
+STATUS | wrapper  | main    | 2019/06/24 18:01:47.252 | Launching a JVM...
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.253 | Unable to write the Java PID file: E:\hybris\hybris\data/hybristomcat.java.pid
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.254 | Unable to write the Java Id file: E:\hybris\hybris\data/hybristomcat.java.id
+ERROR  | wrapper  | main    | 2019/06/24 18:01:47.255 | JVM exited while loading the application.
+ERROR  | wrapper  | main    | 2019/06/24 18:01:47.255 | Unable to start JVM: No such file or directory (2)
+STATUS | wrapper  | main    | 2019/06/24 18:01:47.657 | Reloading Wrapper configuration...
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.664 | Unable to write to the configured log directory: E:\hybris\hybris\log/tomcat (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.664 |   The directory does not exist.
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.664 | Unable to write to the configured log file: E:\hybris\hybris\log/tomcat/console-20190624.log (No such file or directory)
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.664 |   Falling back to the default file in the current working directory: wrapper.log
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.671 | The configured wrapper.java.command could not be found, attempting to launch anyway: C:\Program Files\Java\jdk1.8.0_181\jre/bin/java
+STATUS | wrapper  | main    | 2019/06/24 18:01:47.872 | Launching a JVM...
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.874 | Unable to write the Java PID file: E:\hybris\hybris\data/hybristomcat.java.pid
+WARN   | wrapper  | main    | 2019/06/24 18:01:47.874 | Unable to write the Java Id file: E:\hybris\hybris\data/hybristomcat.java.id
+ERROR  | wrapper  | main    | 2019/06/24 18:01:47.875 | JVM exited while loading the application.
+ERROR  | wrapper  | main    | 2019/06/24 18:01:47.875 | Unable to start JVM: No such file or directory (2)
+FATAL  | wrapper  | main    | 2019/06/24 18:01:48.177 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | main    | 2019/06/24 18:01:48.177 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | main    | 2019/06/24 18:01:48.378 | <-- Wrapper Stopped

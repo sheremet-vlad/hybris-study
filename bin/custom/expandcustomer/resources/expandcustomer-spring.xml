@@ -10,12 +10,13 @@
  license agreement you entered into with SAP.
 -->
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:aop="http://www.springframework.org/schema/aop"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/aop
-           http://www.springframework.org/schema/aop/spring-aop.xsd">
+           http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!--
 	The hybris platform provides one single Spring application context for beans located at the jalo layer.
@@ -77,6 +78,7 @@
 	      	            !execution(* getPK(..))" />  	            
 	       <aop:pointcut id="profiledMethods" expression="execution(* *(..))" />	
 	  -->
+    <context:component-scan base-package="expandcustomer"/>
 	
     <bean id="expandcustomerSystemSetup" class="expandcustomer.setup.ExpandcustomerSystemSetup">
         <!-- constructor arg injection example -->
@@ -89,5 +91,11 @@
         <property name="mediaService" ref="mediaService"/>
         <property name="flexibleSearchService" ref="flexibleSearchService"/>
     </bean>
-			
+
+    <bean id="createCustomerEventListener" class="expandcustomer.events.CreateCustomerEventListener" parent="abstractEventListener"/>
+    <bean id="createCustomerInterceptor" class="expandcustomer.interceptors.CreateCustomerInterceptor"/>
+    <bean id="CustomerInterceptorMapping" class="de.hybris.platform.servicelayer.interceptor.impl.InterceptorMapping">
+        <property name="interceptor" ref="createCustomerInterceptor"/>
+        <property name="typeCode" value="Customer"/>
+    </bean>
 </beans>
