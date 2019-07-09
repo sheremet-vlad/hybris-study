@@ -20,8 +20,8 @@
       <coremodule generated="true" manager="concerttours.jalo.ConcerttoursManager" packageroot="concerttours"/>
 
       <webmodule jspcompile="false" webroot="/concerttours"/>
-					
-	
+
+      <meta key="backoffice-module" value="true"/>
 
    </extension>
       

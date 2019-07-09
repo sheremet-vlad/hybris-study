@@ -1,0 +1,6 @@
+INSERT_UPDATE UserRating;code[unique=true];rating;comment;concert(code)
+;UR100;2;Not good;20170101
+;UR101;5;Perfect;20170101
+;UR102;1;Not good;20170102
+;UR103;4;Perfect;20170102
+;UR104;;;20170102

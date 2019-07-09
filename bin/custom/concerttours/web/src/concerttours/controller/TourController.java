@@ -16,6 +16,9 @@ import java.net.URLDecoder;
 public class TourController {
     private static final String CATALOG_ID = "concertoursProductCatalog";
     private static final String CATALOG_VERSION_NAME = "Online";
+    private static final String TOUR_DETAILS_PAGE = "TourDetails";
+    private static final String DEFAULT_VALUE="-";
+
     private CatalogVersionService catalogVersionService;
     private TourFacade tourFacade;
 
@@ -25,7 +28,8 @@ public class TourController {
         final String decodedTourId = URLDecoder.decode(tourId, "UTF-8");
         final TourData tour = tourFacade.getTourDetails(decodedTourId);
         model.addAttribute("tour", tour);
-        return "TourDetails";
+        model.addAttribute("defaultValue", DEFAULT_VALUE);
+        return TOUR_DETAILS_PAGE;
     }
 
     @Autowired

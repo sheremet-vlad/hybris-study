@@ -41,6 +41,14 @@
 				<modifiers read="true" write="true" search="true" optional="true" />
 			</targetElement>
 		</relation>
+		<relation code="UserRating2Concert" autocreate="true" generate="false" localized="false">
+			<sourceElement qualifier="userRatings" type="UserRating" collectiontype="list" cardinality="many" ordered="false">
+				<modifiers read="true" write="true" search="true" optional="true" />
+			</sourceElement>
+			<targetElement qualifier="concert" type="Concert" cardinality="one">
+				<modifiers read="true" write="true" search="true" optional="true" />
+			</targetElement>
+		</relation>
 	</relations>
 	<!-- Hybris123SnippetEnd -->
 
@@ -144,6 +152,20 @@
 			</attributes>
 		</itemtype>
 
+		<itemtype code="UserRating" autocreate="true">
+			<deployment table="UserRating" typecode="22333"/>
+			<attributes>
+				<attribute qualifier="code" type="java.lang.String">
+					<persistence type="property"/>
+					<modifiers unique="true" optional="false"/>
+				</attribute>
+				<attribute qualifier="rating" type="java.lang.Integer">
+					<persistence type="property"/>
+				</attribute>
+				<attribute qualifier="comment" type="java.lang.String">
+					<persistence type="property"/>
+				</attribute>
+			</attributes>
+		</itemtype>
 	</itemtypes>
-
 </items>

@@ -37,6 +37,7 @@
 		<property name = "venue" type = "String" />
 		<property name = "type" type = "String" />
 		<property name = "countDown" type="Long"/>
+		<property name = "userRatings" type="java.util.List&lt;concerttours.model.UserRatingModel&gt;"/>
 	</bean>
 	<bean class = "concerttours.data.TourData" >
 		<description>Data object representing a tour</description>

@@ -25,3 +25,7 @@ fieldset {
 label {
     font-weight: bold;
 }
+
+.bordered-table {
+    border: 1px black solid;
+}
